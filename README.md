@@ -5,7 +5,7 @@ TypeScript practices and code samples. TypeScript is an open-source programming 
 Update TypeScript  
 $ npm install -g typescript@latest
 //=============================================================================
-Code Settings
+Code Settings  
 %USERPROFILE%\AppData\Roaming\Code\User\settings.json  
 //=============================================================================
 Code KeyBindings  
