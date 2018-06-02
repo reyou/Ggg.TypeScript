@@ -8,6 +8,17 @@ tsc --version
 Update TypeScript  
 $ npm install -g typescript@latest
 //=============================================================================
+cannot find name 'console'
+https://github.com/Microsoft/TypeScript/issues/9545
+$ npm install @types/node
+//=============================================================================
+tsconfig.json
+D:\Git\Ggg.Github\Ggg.TypeScript\apps\app-docs\tsconfig.json
+//=============================================================================
+compile and watch whole folder
+run following command in a new console
+$ tsc
+//=============================================================================
 Code Settings  
 %USERPROFILE%\AppData\Roaming\Code\User\settings.json  
 //=============================================================================

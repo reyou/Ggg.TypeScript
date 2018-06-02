@@ -1,0 +1,1 @@
+{"version":3,"file":"Accessors.js","sourceRoot":"","sources":["Accessors.ts"],"names":[],"mappings":"AAAA;;;;;2DAK2D;AAC3D;CAEC;AAED,IAAI,gBAAgB,GAAG,IAAI,iBAAiB,EAAE,CAAC;AAC/C,gBAAgB,CAAC,QAAQ,GAAG,WAAW,CAAC;AACxC,IAAI,gBAAgB,CAAC,QAAQ,EAAE;IAC3B,OAAO,CAAC,GAAG,CAAC,gBAAgB,CAAC,QAAQ,CAAC,CAAC;CAC1C"}
