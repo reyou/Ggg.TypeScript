@@ -9,4 +9,4 @@ class AnimalAbstract {
         console.log("roaming the earth...");
     }
 }
-//# sourceMappingURL=Abstract Classes.js.map
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWJzdHJhY3QgQ2xhc3Nlcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkFic3RyYWN0IENsYXNzZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNERBQTREO0FBQzVEOzs7OzZDQUk2QztBQUM3QztJQVFFLElBQUk7UUFDRixPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFzQixDQUFDLENBQUM7SUFDdEMsQ0FBQztDQUNGIn0=

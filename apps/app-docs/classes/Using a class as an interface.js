@@ -6,4 +6,4 @@ class Point2 {
 }
 let point3d = { x: 1, y: 2, z: 3 };
 console.log(point3d);
-//# sourceMappingURL=Using a class as an interface.js.map
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVXNpbmcgYSBjbGFzcyBhcyBhbiBpbnRlcmZhY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJVc2luZyBhIGNsYXNzIGFzIGFuIGludGVyZmFjZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O21FQUdtRTtBQUNuRTtDQUdDO0FBTUQsSUFBSSxPQUFPLEdBQWEsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDO0FBRTdDLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUMifQ==
