@@ -1,0 +1,7 @@
+create({ prop: 0 }); // OK
+create(null); // OK
+// create(42); // Error
+// create("string"); // Error
+// create(false); // Error
+create(undefined); // Error
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqZWN0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiT2JqZWN0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1BLE1BQU0sQ0FBQyxFQUFFLElBQUksRUFBRSxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsS0FBSztBQUMxQixNQUFNLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxLQUFLO0FBRW5CLHVCQUF1QjtBQUN2Qiw2QkFBNkI7QUFDN0IsMEJBQTBCO0FBQzFCLE1BQU0sQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLFFBQVEifQ==

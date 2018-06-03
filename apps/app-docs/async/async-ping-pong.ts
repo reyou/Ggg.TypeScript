@@ -6,7 +6,7 @@ export class GggExamplesPromise {
     console.log("main is done.");
   }
   public static async Ping() {
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i <= 3; i++) {
       await GggExamplesPromise.Delay(300);
       console.log(i + " ping.");
     }

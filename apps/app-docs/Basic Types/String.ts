@@ -1,0 +1,27 @@
+/*Another fundamental part of creating programs in JavaScript for 
+webpages and servers alike is working with textual data. As in other 
+languages, we use the type string to refer to these textual datatypes. 
+Just like JavaScript, TypeScript also uses double quotes (") or single 
+quotes (') to surround string data. */
+let color: string = "blue";
+color = "red";
+/*You can also use template strings, which can span multiple lines 
+and have embedded expressions. These strings are surrounded by the 
+backtick/backquote (`) character, and embedded expressions are 
+of the form ${ expr }. */
+let fullName: string = `Bob Bobbington`;
+let age: number = 37;
+let sentence: string = `Hello, my name is ${fullName}.
+I'll be ${age + 1} years old next month.`;
+
+console.log(sentence);
+console.log("\n=============================================\n");
+// This is equivalent to declaring sentence like so:
+let sentence2: string =
+  "Hello, my name is " +
+  fullName +
+  ".\n" +
+  "I'll be " +
+  (age + 1) +
+  " years old next month.";
+console.log(sentence2);

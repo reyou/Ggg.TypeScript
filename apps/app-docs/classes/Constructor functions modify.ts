@@ -12,16 +12,15 @@ creates instances of the Greeter class. We show this by using new
 on greeterMaker, creating new instances of Greeter and invoking 
 them as before. */
 class GreeterModify {
-    static standardGreeting = "Hello, there";
-    greeting: string;
-    greet() {
-        if (this.greeting) {
-            return "Hello, " + this.greeting;
-        }
-        else {
-            return GreeterModify.standardGreeting;
-        }
+  static standardGreeting = "Hello, there";
+  greeting: string;
+  greet() {
+    if (this.greeting) {
+      return "Hello, " + this.greeting;
+    } else {
+      return GreeterModify.standardGreeting;
     }
+  }
 }
 
 let greeter1: GreeterModify;
@@ -29,6 +28,7 @@ greeter1 = new GreeterModify();
 console.log(greeter1.greet());
 
 let greeterMaker: typeof GreeterModify = GreeterModify;
+console.log(typeof greeterMaker);
 greeterMaker.standardGreeting = "Hey there!";
 
 let greeter2: GreeterModify = new greeterMaker();

@@ -1,0 +1,6 @@
+let squareExtend = {};
+squareExtend.color = "blue";
+squareExtend.sideLength = 10;
+squareExtend.penWidth = 5.0;
+console.log(squareExtend);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXh0ZW5kaW5nIEludGVyZmFjZXMuMS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV4dGVuZGluZyBJbnRlcmZhY2VzLjEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYUEsSUFBSSxZQUFZLEdBQWlCLEVBQUUsQ0FBQztBQUNwQyxZQUFZLENBQUMsS0FBSyxHQUFHLE1BQU0sQ0FBQztBQUM1QixZQUFZLENBQUMsVUFBVSxHQUFHLEVBQUUsQ0FBQztBQUM3QixZQUFZLENBQUMsUUFBUSxHQUFHLEdBQUcsQ0FBQztBQUM1QixPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBQyxDQUFDIn0=
