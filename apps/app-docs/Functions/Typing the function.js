@@ -1,0 +1,7 @@
+function add(x, y) {
+    return x + y;
+}
+let myAdd = function (x, y) {
+    return x + y;
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHlwaW5nIHRoZSBmdW5jdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlR5cGluZyB0aGUgZnVuY3Rpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsYUFBYSxDQUFTLEVBQUUsQ0FBUztJQUMvQixPQUFPLENBQUMsR0FBRyxDQUFDLENBQUM7QUFDZixDQUFDO0FBRUQsSUFBSSxLQUFLLEdBQUcsVUFBUyxDQUFTLEVBQUUsQ0FBUztJQUN2QyxPQUFPLENBQUMsR0FBRyxDQUFDLENBQUM7QUFDZixDQUFDLENBQUMifQ==
