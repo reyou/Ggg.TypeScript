@@ -2,7 +2,7 @@
 creates two things: a type representing instances of the class
 and a constructor function. Because classes create types, you can
 use them in the same places you would be able to use interfaces. */
-var Point2 = /** @class */ (function () {
+var Point2 = (function () {
     function Point2() {
     }
     return Point2;

@@ -5,12 +5,12 @@ function, this will be undefined. With some work you can use this parameters
 to prevent errors with callbacks too. First, the library author needs to annotate
 the callback type with this: */
 function ThisParametersInCallbacks() {
-    var Event = /** @class */ (function () {
+    var Event = (function () {
         function Event() {
         }
         return Event;
     }());
-    var Handler = /** @class */ (function () {
+    var Handler = (function () {
         function Handler() {
         }
         Handler.prototype.onClickBad = function (e) {
@@ -30,12 +30,12 @@ change the type of this: */
 function that does not require a this type. Second, annotate your
 calling code with this: */
 function ThisParametersInCallbacksFixed() {
-    var Event = /** @class */ (function () {
+    var Event = (function () {
         function Event() {
         }
         return Event;
     }());
-    var Handler = /** @class */ (function () {
+    var Handler = (function () {
         function Handler() {
         }
         Handler.prototype.onClickGood = function (e) {
@@ -51,12 +51,12 @@ function ThisParametersInCallbacksFixed() {
 to pass to addClickListener. Of course, this also means that it can’t use
 this.info. If you want both then you’ll have to use an arrow function: */
 function ThisParametersInCallbacksFixed2() {
-    var Event = /** @class */ (function () {
+    var Event = (function () {
         function Event() {
         }
         return Event;
     }());
-    var Handler = /** @class */ (function () {
+    var Handler = (function () {
         function Handler() {
             var _this = this;
             this.onClickGood = function (e) {

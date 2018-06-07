@@ -1,4 +1,4 @@
-var Clock2 = /** @class */ (function () {
+var Clock2 = (function () {
     function Clock2(h, m) {
         this.currentTime = new Date(h, m);
     }

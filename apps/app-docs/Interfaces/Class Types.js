@@ -2,7 +2,7 @@
 One of the most common uses of interfaces in languages like C# and Java,
 that of explicitly enforcing that a class meets a particular contract,
 is also possible in TypeScript. */
-var Clock = /** @class */ (function () {
+var Clock = (function () {
     function Clock(h, m) {
     }
     return Clock;

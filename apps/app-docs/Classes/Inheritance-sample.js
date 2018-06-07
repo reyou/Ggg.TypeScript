@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Animal = /** @class */ (function () {
+var Animal = (function () {
     function Animal() {
     }
     Animal.prototype.move = function (distanceInMeters) {
@@ -17,7 +17,7 @@ var Animal = /** @class */ (function () {
     };
     return Animal;
 }());
-var Dog = /** @class */ (function (_super) {
+var Dog = (function (_super) {
     __extends(Dog, _super);
     function Dog() {
         return _super !== null && _super.apply(this, arguments) || this;

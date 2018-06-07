@@ -1,7 +1,7 @@
 /*You can make properties readonly by using the readonly keyword.
 Readonly properties must be initialized at their declaration
 or in the constructor. */
-var Octopus = /** @class */ (function () {
+var Octopus = (function () {
     function Octopus(theName) {
         this.numberOfLegs = 8;
         this.name = theName;

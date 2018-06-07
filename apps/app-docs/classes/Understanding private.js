@@ -1,4 +1,4 @@
-var AnimalPrivate = /** @class */ (function () {
+var AnimalPrivate = (function () {
     function AnimalPrivate(theName) {
         this.name = theName;
     }

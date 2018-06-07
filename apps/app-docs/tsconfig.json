@@ -3,9 +3,16 @@
     "target": "es5",
     "module": "commonjs",
     "outDir": "./",
-    "lib": ["es2015"],
+    "lib": [
+      "es2015"
+    ],
     "watch": true,
+    "downlevelIteration": true,
     "inlineSourceMap": true
   },
-  "exclude": ["node_modules", "typings/browser.d.ts", "typings/browser"]
+  "exclude": [
+    "node_modules",
+    "typings/browser.d.ts",
+    "typings/browser"
+  ]
 }

@@ -1,7 +1,7 @@
 /*Parameter properties let you create and initialize a member
 in one place. Here’s a further revision of the previous Octopus
 class using a parameter property: */
-var OctopusParam = /** @class */ (function () {
+var OctopusParam = (function () {
     function OctopusParam(name) {
         this.name = name;
         this.numberOfLegs = 8;

@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
    methods. Both define the signature of a method without including
    a method body. However, abstract methods must include the abstract
    keyword and may optionally include access modifiers. */
-var Department = /** @class */ (function () {
+var Department = (function () {
     function Department(name) {
         this.name = name;
     }
@@ -23,7 +23,7 @@ var Department = /** @class */ (function () {
     };
     return Department;
 }());
-var AccountingDepartment = /** @class */ (function (_super) {
+var AccountingDepartment = (function (_super) {
     __extends(AccountingDepartment, _super);
     function AccountingDepartment() {
         return _super.call(this, "Accounting and Auditing") || this;
