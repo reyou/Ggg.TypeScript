@@ -1,4 +1,4 @@
-let square2 = {};
+var square2 = {};
 square2.color = "blue";
 square2.sideLength = 10;
 console.log(square2);

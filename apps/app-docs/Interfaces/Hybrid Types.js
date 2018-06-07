@@ -1,5 +1,5 @@
 function getCounter() {
-    let counter = function (start) {
+    var counter = function (start) {
         console.log(start);
     };
     counter.interval = 123;
@@ -8,7 +8,7 @@ function getCounter() {
     };
     return counter;
 }
-let cCounterHybrid = getCounter();
+var cCounterHybrid = getCounter();
 cCounterHybrid(10);
 cCounterHybrid.reset();
 cCounterHybrid.interval = 5.0;

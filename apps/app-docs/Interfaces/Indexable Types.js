@@ -1,7 +1,7 @@
-let myArray;
+var myArray;
 myArray = ["Bob", "Fred"];
 console.log(myArray);
-let myStr = myArray[0];
+var myStr = myArray[0];
 console.log(myStr);
 /*Above, we have a StringArray interface that has an index signature.
 This index signature states that when a StringArray is

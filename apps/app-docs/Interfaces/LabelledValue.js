@@ -1,7 +1,7 @@
 function printLabel2(labelledObj) {
     console.log(labelledObj.label);
 }
-let myObj2 = {
+var myObj2 = {
     size: 10,
     label: "Size 11 Object"
 };

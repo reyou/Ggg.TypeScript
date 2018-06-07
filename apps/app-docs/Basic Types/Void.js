@@ -6,6 +6,6 @@ function warnUser() {
 }
 warnUser();
 // Declaring variables of type void is not useful because you can only assign undefined or null to them:
-let unusable = undefined;
+var unusable = undefined;
 console.log(unusable);
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVm9pZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlZvaWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O3dDQUV3QztBQUN4QztJQUNFLE9BQU8sQ0FBQyxHQUFHLENBQUMsNEJBQTRCLENBQUMsQ0FBQztBQUM1QyxDQUFDO0FBQ0QsUUFBUSxFQUFFLENBQUM7QUFDWCx3R0FBd0c7QUFDeEcsSUFBSSxRQUFRLEdBQVMsU0FBUyxDQUFDO0FBQy9CLE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLENBQUMifQ==

@@ -4,24 +4,25 @@ object literal. To fix this, you can provide an explicit this parameter.
 this parameters are fake parameters that come first in the parameter
 list of a function: */
 function ThisParameters() {
-    let deck = {
+    var deck = {
         suits: ["hearts", "spades", "clubs", "diamonds"],
         cards: Array(52),
         // NOTE: The function now explicitly specifies that its callee must be of type Deck
         createCardPicker: function () {
-            return () => {
-                let pickedCard = Math.floor(Math.random() * 52);
-                let pickedSuit = Math.floor(pickedCard / 13);
-                return { suit: this.suits[pickedSuit], card: pickedCard % 13 };
+            var _this = this;
+            return function () {
+                var pickedCard = Math.floor(Math.random() * 52);
+                var pickedSuit = Math.floor(pickedCard / 13);
+                return { suit: _this.suits[pickedSuit], card: pickedCard % 13 };
             };
         }
     };
-    let cardPicker = deck.createCardPicker();
-    let pickedCard = cardPicker();
+    var cardPicker = deck.createCardPicker();
+    var pickedCard = cardPicker();
     console.log("card: " + pickedCard.card + " of " + pickedCard.suit);
 }
 /*Now TypeScript knows that createCardPicker expects to be called on a
 Deck object. That means that this is of type Deck now, not any, so
 --noImplicitThis will not cause any errors. */
 ThisParameters();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGhpcyBwYXJhbWV0ZXJzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsidGhpcyBwYXJhbWV0ZXJzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O3NCQUlzQjtBQUN0QjtJQVVFLElBQUksSUFBSSxHQUFTO1FBQ2YsS0FBSyxFQUFFLENBQUMsUUFBUSxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQUUsVUFBVSxDQUFDO1FBQ2hELEtBQUssRUFBRSxLQUFLLENBQUMsRUFBRSxDQUFDO1FBQ2hCLG1GQUFtRjtRQUNuRixnQkFBZ0IsRUFBRTtZQUNoQixPQUFPLEdBQUcsRUFBRTtnQkFDVixJQUFJLFVBQVUsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLEVBQUUsR0FBRyxFQUFFLENBQUMsQ0FBQztnQkFDaEQsSUFBSSxVQUFVLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxVQUFVLEdBQUcsRUFBRSxDQUFDLENBQUM7Z0JBRTdDLE9BQU8sRUFBRSxJQUFJLEVBQUUsSUFBSSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsRUFBRSxJQUFJLEVBQUUsVUFBVSxHQUFHLEVBQUUsRUFBRSxDQUFDO1lBQ2pFLENBQUMsQ0FBQztRQUNKLENBQUM7S0FDRixDQUFDO0lBQ0YsSUFBSSxVQUFVLEdBQUcsSUFBSSxDQUFDLGdCQUFnQixFQUFFLENBQUM7SUFDekMsSUFBSSxVQUFVLEdBQUcsVUFBVSxFQUFFLENBQUM7SUFFOUIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLEdBQUcsVUFBVSxDQUFDLElBQUksR0FBRyxNQUFNLEdBQUcsVUFBVSxDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3JFLENBQUM7QUFDRDs7OENBRThDO0FBQzlDLGNBQWMsRUFBRSxDQUFDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGhpcyBwYXJhbWV0ZXJzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsidGhpcyBwYXJhbWV0ZXJzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O3NCQUlzQjtBQUN0QjtJQVVFLElBQUksSUFBSSxHQUFTO1FBQ2YsS0FBSyxFQUFFLENBQUMsUUFBUSxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQUUsVUFBVSxDQUFDO1FBQ2hELEtBQUssRUFBRSxLQUFLLENBQUMsRUFBRSxDQUFDO1FBQ2hCLG1GQUFtRjtRQUNuRixnQkFBZ0IsRUFBRTtZQUFBLGlCQU9qQjtZQU5DLE9BQU87Z0JBQ0wsSUFBSSxVQUFVLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsRUFBRSxDQUFDLENBQUM7Z0JBQ2hELElBQUksVUFBVSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsVUFBVSxHQUFHLEVBQUUsQ0FBQyxDQUFDO2dCQUU3QyxPQUFPLEVBQUUsSUFBSSxFQUFFLEtBQUksQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUUsSUFBSSxFQUFFLFVBQVUsR0FBRyxFQUFFLEVBQUUsQ0FBQztZQUNqRSxDQUFDLENBQUM7UUFDSixDQUFDO0tBQ0YsQ0FBQztJQUNGLElBQUksVUFBVSxHQUFHLElBQUksQ0FBQyxnQkFBZ0IsRUFBRSxDQUFDO0lBQ3pDLElBQUksVUFBVSxHQUFHLFVBQVUsRUFBRSxDQUFDO0lBRTlCLE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxHQUFHLFVBQVUsQ0FBQyxJQUFJLEdBQUcsTUFBTSxHQUFHLFVBQVUsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUNyRSxDQUFDO0FBQ0Q7OzhDQUU4QztBQUM5QyxjQUFjLEVBQUUsQ0FBQyJ9

@@ -7,8 +7,8 @@ function UsingTypeParameters() {
     function getProperty(obj, key) {
         return obj[key];
     }
-    let x = { a: 1, b: 2, c: 3, d: 4 };
-    let result = getProperty(x, "a"); // okay
+    var x = { a: 1, b: 2, c: 3, d: 4 };
+    var result = getProperty(x, "a"); // okay
     // getProperty(x, "m"); // error: Argument of type 'm' isn't assignable to 'a' | 'b' | 'c' | 'd'.
     console.log(result);
 }

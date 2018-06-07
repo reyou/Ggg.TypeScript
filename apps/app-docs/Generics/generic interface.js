@@ -4,8 +4,8 @@ function GenericInterface() {
     function identity(arg) {
         return arg;
     }
-    let myIdentity = identity;
-    let result = myIdentity("this is my identity 2");
+    var myIdentity = identity;
+    var result = myIdentity("this is my identity 2");
     console.log(result);
 }
 GenericInterface();
@@ -18,8 +18,8 @@ function GenericInterface2() {
     function identity(arg) {
         return arg;
     }
-    let myIdentity = identity;
-    let result = myIdentity(1234);
+    var myIdentity = identity;
+    var result = myIdentity(1234);
     console.log(result);
 }
 GenericInterface2();

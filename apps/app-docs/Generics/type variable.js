@@ -11,13 +11,13 @@ function TypeVariables() {
     function identity(arg) {
         return arg;
     }
-    let output = identity("myString"); // type of output will be 'string'
+    var output = identity("myString"); // type of output will be 'string'
     console.log(output);
     // The second way is also perhaps the most common.
     // Here we use type argument inference – that is, we want the compiler
     // to set the value of T for us automatically based on the type of
     // the argument we pass in:
-    let output2 = identity("myString"); // type of output will be 'string'
+    var output2 = identity("myString"); // type of output will be 'string'
     console.log(output2);
 }
 TypeVariables();

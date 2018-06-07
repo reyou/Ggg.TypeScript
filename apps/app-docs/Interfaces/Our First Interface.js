@@ -9,7 +9,7 @@ There are some cases where TypeScript isn’t as lenient, which we’ll cover in
 function printLabel(labelledObj) {
     console.log(labelledObj.label);
 }
-let myObj = {
+var myObj = {
     size: 10,
     label: "Size 10 Object"
 };

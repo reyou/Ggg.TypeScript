@@ -1,13 +1,14 @@
 // Press F5 to run this page under VS code.
 // http://www.typescriptlang.org/docs/handbook/classes.html
-class Greeter {
-    constructor(message) {
+var Greeter = /** @class */ (function () {
+    function Greeter(message) {
         this.greeting = message;
     }
-    greet() {
+    Greeter.prototype.greet = function () {
         return "Hello, " + this.greeting;
-    }
-}
-let greeter = new Greeter("world");
+    };
+    return Greeter;
+}());
+var greeter = new Greeter("world");
 console.log(greeter);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2xhc3MtR3JlZXRlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImNsYXNzLUdyZWV0ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMkNBQTJDO0FBQzNDLDJEQUEyRDtBQUUzRDtJQUVFLFlBQVksT0FBZTtRQUN6QixJQUFJLENBQUMsUUFBUSxHQUFHLE9BQU8sQ0FBQztJQUMxQixDQUFDO0lBQ0QsS0FBSztRQUNILE9BQU8sU0FBUyxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUM7SUFDbkMsQ0FBQztDQUNGO0FBRUQsSUFBSSxPQUFPLEdBQUcsSUFBSSxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUM7QUFDbkMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2xhc3MtR3JlZXRlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImNsYXNzLUdyZWV0ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMkNBQTJDO0FBQzNDLDJEQUEyRDtBQUUzRDtJQUVFLGlCQUFZLE9BQWU7UUFDekIsSUFBSSxDQUFDLFFBQVEsR0FBRyxPQUFPLENBQUM7SUFDMUIsQ0FBQztJQUNELHVCQUFLLEdBQUw7UUFDRSxPQUFPLFNBQVMsR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO0lBQ25DLENBQUM7SUFDSCxjQUFDO0FBQUQsQ0FBQyxBQVJELElBUUM7QUFFRCxJQUFJLE9BQU8sR0FBRyxJQUFJLE9BQU8sQ0FBQyxPQUFPLENBQUMsQ0FBQztBQUNuQyxPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDIn0=

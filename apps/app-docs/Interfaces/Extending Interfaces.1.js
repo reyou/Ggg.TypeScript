@@ -1,4 +1,4 @@
-let squareExtend = {};
+var squareExtend = {};
 squareExtend.color = "blue";
 squareExtend.sideLength = 10;
 squareExtend.penWidth = 5.0;

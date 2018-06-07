@@ -6,11 +6,15 @@ the arguments directly using the arguments variable that is visible inside
 every function body.
 In TypeScript, you can gather these arguments together into a variable: */
 function RestParameters() {
-    function buildName(firstName, ...restOfName) {
+    function buildName(firstName) {
+        var restOfName = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            restOfName[_i - 1] = arguments[_i];
+        }
         return firstName + " " + restOfName.join(" ");
     }
-    let employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
+    var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
     console.log(employeeName);
 }
 RestParameters();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVzdCBQYXJhbWV0ZXJzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVzdCBQYXJhbWV0ZXJzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7MEVBTTBFO0FBQzFFO0lBQ0UsbUJBQW1CLFNBQWlCLEVBQUUsR0FBRyxVQUFvQjtRQUMzRCxPQUFPLFNBQVMsR0FBRyxHQUFHLEdBQUcsVUFBVSxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUNoRCxDQUFDO0lBRUQsSUFBSSxZQUFZLEdBQUcsU0FBUyxDQUFDLFFBQVEsRUFBRSxRQUFRLEVBQUUsT0FBTyxFQUFFLFdBQVcsQ0FBQyxDQUFDO0lBQ3ZFLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxDQUFDLENBQUM7QUFDNUIsQ0FBQztBQUVELGNBQWMsRUFBRSxDQUFDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVzdCBQYXJhbWV0ZXJzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVzdCBQYXJhbWV0ZXJzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7MEVBTTBFO0FBQzFFO0lBQ0UsbUJBQW1CLFNBQWlCO1FBQUUsb0JBQXVCO2FBQXZCLFVBQXVCLEVBQXZCLHFCQUF1QixFQUF2QixJQUF1QjtZQUF2QixtQ0FBdUI7O1FBQzNELE9BQU8sU0FBUyxHQUFHLEdBQUcsR0FBRyxVQUFVLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ2hELENBQUM7SUFFRCxJQUFJLFlBQVksR0FBRyxTQUFTLENBQUMsUUFBUSxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQUUsV0FBVyxDQUFDLENBQUM7SUFDdkUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUMsQ0FBQztBQUM1QixDQUFDO0FBRUQsY0FBYyxFQUFFLENBQUMifQ==

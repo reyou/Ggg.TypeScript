@@ -6,11 +6,11 @@ side of the equation but not the other: */
 This helps cut down on the amount of effort to keep your program typed. */
 function InferringTypes() {
     // myAdd has the full function type
-    let myAdd = function (x, y) {
+    var myAdd = function (x, y) {
         return x + y;
     };
     // The parameters 'x' and 'y' have the type number
-    let myAdd2 = function (x, y) {
+    var myAdd2 = function (x, y) {
         return x + y;
     };
 }

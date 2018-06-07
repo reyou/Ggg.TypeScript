@@ -3,7 +3,7 @@ fixed number of elements is known, but need not be the same.
 For example, you may want to represent a value as a pair of
 a string and a number: */
 // Declare a tuple type
-let x;
+var x;
 // Initialize it
 x = ["hello", 10]; // OK
 // Initialize it incorrectly
