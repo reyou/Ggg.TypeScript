@@ -1,5 +1,5 @@
 function StructuralTyping() {
-    var Person = (function () {
+    var Person = /** @class */ (function () {
         function Person() {
         }
         return Person;

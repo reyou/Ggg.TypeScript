@@ -20,12 +20,12 @@ This is useful when you have a large inheritance hierarchy, but
 want to specify that your code works with only subclasses that have
 certain properties. The subclasses don’t have to be related besides
 inheriting from the base class. For example: */
-var ControlExtending = (function () {
+var ControlExtending = /** @class */ (function () {
     function ControlExtending() {
     }
     return ControlExtending;
 }());
-var Button = (function (_super) {
+var Button = /** @class */ (function (_super) {
     __extends(Button, _super);
     function Button() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -33,7 +33,7 @@ var Button = (function (_super) {
     Button.prototype.select = function () { };
     return Button;
 }(ControlExtending));
-var TextBox = (function (_super) {
+var TextBox = /** @class */ (function (_super) {
     __extends(TextBox, _super);
     function TextBox() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -41,7 +41,7 @@ var TextBox = (function (_super) {
     TextBox.prototype.select = function () { };
     return TextBox;
 }(ControlExtending));
-var Location = (function () {
+var Location = /** @class */ (function () {
     function Location() {
     }
     return Location;

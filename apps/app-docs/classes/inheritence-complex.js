@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var AnimalComplex = (function () {
+var AnimalComplex = /** @class */ (function () {
     function AnimalComplex(theName) {
         this.name = theName;
     }
@@ -18,7 +18,7 @@ var AnimalComplex = (function () {
     };
     return AnimalComplex;
 }());
-var Snake = (function (_super) {
+var Snake = /** @class */ (function (_super) {
     __extends(Snake, _super);
     function Snake(name) {
         return _super.call(this, name) || this;
@@ -30,7 +30,7 @@ var Snake = (function (_super) {
     };
     return Snake;
 }(AnimalComplex));
-var Horse = (function (_super) {
+var Horse = /** @class */ (function (_super) {
     __extends(Horse, _super);
     function Horse(name) {
         return _super.call(this, name) || this;

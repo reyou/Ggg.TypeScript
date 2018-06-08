@@ -8,20 +8,20 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var AnimalPractice = (function () {
+var AnimalPractice = /** @class */ (function () {
     function AnimalPractice(theName) {
         this.name = theName;
     }
     return AnimalPractice;
 }());
-var Rhino = (function (_super) {
+var Rhino = /** @class */ (function (_super) {
     __extends(Rhino, _super);
     function Rhino() {
         return _super.call(this, "Rhino") || this;
     }
     return Rhino;
 }(AnimalPractice));
-var Employee = (function () {
+var Employee = /** @class */ (function () {
     function Employee(theName) {
         this.name = theName;
     }

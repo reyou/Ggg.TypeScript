@@ -15,12 +15,12 @@ from the string indexer. This is because when indexing with a number,
 JavaScript will actually convert that to a string before indexing into
 an object. That means that indexing with 100 (a number) is the same
 thing as indexing with "100" (a string), so the two need to be consistent. */
-var AnimalIndex = (function () {
+var AnimalIndex = /** @class */ (function () {
     function AnimalIndex() {
     }
     return AnimalIndex;
 }());
-var DogIndex = (function (_super) {
+var DogIndex = /** @class */ (function (_super) {
     __extends(DogIndex, _super);
     function DogIndex() {
         return _super !== null && _super.apply(this, arguments) || this;

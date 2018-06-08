@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var GggExamplesPromise = (function () {
+var GggExamplesPromise = /** @class */ (function () {
     function GggExamplesPromise() {
     }
     GggExamplesPromise.ExecutePromise = function () {

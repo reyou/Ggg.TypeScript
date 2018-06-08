@@ -4,7 +4,7 @@ be derived. They may not be instantiated directly. Unlike an interface,
 an abstract class may contain implementation details for its members.
 The abstract keyword is used to define abstract classes as well as
 abstract methods within an abstract class. */
-var AnimalAbstract = (function () {
+var AnimalAbstract = /** @class */ (function () {
     function AnimalAbstract() {
     }
     AnimalAbstract.prototype.move = function () {
