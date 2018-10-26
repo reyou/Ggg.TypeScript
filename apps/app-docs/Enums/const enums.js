@@ -1,3 +1,4 @@
+"use strict";
 /*In most cases, enums are a perfectly valid solution. However sometimes
 requirements are tighter. To avoid paying the cost of extra generated
 code and additional indirection when accessing enum values, it’s possible
@@ -19,4 +20,4 @@ function ConstEnums2() {
         3 /* Right */
     ];
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3QgZW51bXMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJjb25zdCBlbnVtcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozt5QkFJeUI7QUFDekI7SUFLRSxPQUFPLENBQUMsR0FBRyxXQUFRLENBQUM7QUFDdEIsQ0FBQztBQUNELFVBQVUsRUFBRSxDQUFDO0FBQ2I7OztvQkFHb0I7QUFDcEI7SUFRRSxJQUFJLFVBQVUsR0FBRzs7Ozs7S0FLaEIsQ0FBQztBQUNKLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3QgZW51bXMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJjb25zdCBlbnVtcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7eUJBSXlCO0FBQ3pCO0lBS0UsT0FBTyxDQUFDLEdBQUcsV0FBUSxDQUFDO0FBQ3RCLENBQUM7QUFDRCxVQUFVLEVBQUUsQ0FBQztBQUNiOzs7b0JBR29CO0FBQ3BCO0lBUUUsSUFBSSxVQUFVLEdBQUc7Ozs7O0tBS2hCLENBQUM7QUFDSixDQUFDIn0=

@@ -1,3 +1,4 @@
+"use strict";
 // https://www.typescriptlang.org/docs/handbook/classes.html
 /*Abstract classes are base classes from which other classes may
 be derived. They may not be instantiated directly. Unlike an interface,
@@ -12,4 +13,4 @@ var AnimalAbstract = /** @class */ (function () {
     };
     return AnimalAbstract;
 }());
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWJzdHJhY3QgQ2xhc3Nlcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkFic3RyYWN0IENsYXNzZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNERBQTREO0FBQzVEOzs7OzZDQUk2QztBQUM3QztJQUFBO0lBV0EsQ0FBQztJQUhDLDZCQUFJLEdBQUo7UUFDRSxPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFzQixDQUFDLENBQUM7SUFDdEMsQ0FBQztJQUNILHFCQUFDO0FBQUQsQ0FBQyxBQVhELElBV0MifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWJzdHJhY3QgQ2xhc3Nlcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkFic3RyYWN0IENsYXNzZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLDREQUE0RDtBQUM1RDs7Ozs2Q0FJNkM7QUFDN0M7SUFBQTtJQVdBLENBQUM7SUFIQyw2QkFBSSxHQUFKO1FBQ0UsT0FBTyxDQUFDLEdBQUcsQ0FBQyxzQkFBc0IsQ0FBQyxDQUFDO0lBQ3RDLENBQUM7SUFDSCxxQkFBQztBQUFELENBQUMsQUFYRCxJQVdDIn0=

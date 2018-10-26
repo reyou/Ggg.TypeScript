@@ -9,5 +9,7 @@ interface ClockInterface {
 
 class Clock implements ClockInterface {
   currentTime: Date;
-  constructor(h: number, m: number) {}
+  constructor(h: number, m: number) {
+    this.currentTime = new Date();
+  }
 }

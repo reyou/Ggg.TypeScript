@@ -2,8 +2,8 @@
 uses dynamic property names. For example, a common Javascript 
 pattern is to pick a subset of properties from an object: */
 function IndexTypes() {
-  function pluck2(o, names) {
-    return names.map(n => o[n]);
+  function pluck2(o: any, names: any) {
+    return names.map((n: any) => o[n]);
   }
   // Here’s how you would write and use this function in TypeScript,
   // using the index type query and indexed access operators:

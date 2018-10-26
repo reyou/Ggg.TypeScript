@@ -1,3 +1,4 @@
+"use strict";
 /*String enums are a similar concept, but have some subtle
 runtime differences as documented below. In a string enum,
 each member has to be constant-initialized with a string
@@ -11,4 +12,4 @@ function StringEnums() {
         Direction["Right"] = "RIGHT";
     })(Direction || (Direction = {}));
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RyaW5nIGVudW1zLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3RyaW5nIGVudW1zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7K0NBRytDO0FBQy9DO0lBQ0UsSUFBSyxTQUtKO0lBTEQsV0FBSyxTQUFTO1FBQ1osc0JBQVMsQ0FBQTtRQUNULDBCQUFhLENBQUE7UUFDYiwwQkFBYSxDQUFBO1FBQ2IsNEJBQWUsQ0FBQTtJQUNqQixDQUFDLEVBTEksU0FBUyxLQUFULFNBQVMsUUFLYjtBQUNILENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RyaW5nIGVudW1zLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3RyaW5nIGVudW1zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTs7OytDQUcrQztBQUMvQztJQUNFLElBQUssU0FLSjtJQUxELFdBQUssU0FBUztRQUNaLHNCQUFTLENBQUE7UUFDVCwwQkFBYSxDQUFBO1FBQ2IsMEJBQWEsQ0FBQTtRQUNiLDRCQUFlLENBQUE7SUFDakIsQ0FBQyxFQUxJLFNBQVMsS0FBVCxTQUFTLFFBS2I7QUFDSCxDQUFDIn0=

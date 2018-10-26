@@ -11,23 +11,23 @@ infer and constrain relationships between the constructor function and
 the instance side of class types. */
 function UsingClassTypesAdvanced() {
   class BeeKeeper {
-    hasMask: boolean;
+    hasMask: boolean | undefined;
   }
 
   class ZooKeeper {
-    nametag: string;
+    nametag: string | undefined;
   }
 
   class Animal {
-    numLegs: number;
+    numLegs: number | undefined;
   }
 
   class Bee extends Animal {
-    keeper: BeeKeeper;
+    keeper: BeeKeeper | undefined;
   }
 
   class Lion extends Animal {
-    keeper: ZooKeeper;
+    keeper: ZooKeeper | undefined;
   }
   function createInstance<A extends Animal>(c: new () => A): A {
     return new c();

@@ -1,3 +1,4 @@
+"use strict";
 // Now that we’ve typed the function, let’s write the
 // full type of the function out by looking at the each piece of the function type.
 /*A function’s type has the same two parts: the type of the arguments
@@ -11,4 +12,4 @@ var myAddType = function (x, y) {
 var mySubtractType = function (x, y) {
     return x - y;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV3JpdGluZyB0aGUgZnVuY3Rpb24gdHlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIldyaXRpbmcgdGhlIGZ1bmN0aW9uIHR5cGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEscURBQXFEO0FBQ3JELG1GQUFtRjtBQUNuRjs7Ozs2RUFJNkU7QUFDN0UsSUFBSSxTQUFTLEdBQXFDLFVBQ2hELENBQVMsRUFDVCxDQUFTO0lBRVQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0FBQ2YsQ0FBQyxDQUFDO0FBRUYsSUFBSSxjQUFjLEdBQXFDLFVBQ3JELENBQVMsRUFDVCxDQUFTO0lBRVQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0FBQ2YsQ0FBQyxDQUFDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV3JpdGluZyB0aGUgZnVuY3Rpb24gdHlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIldyaXRpbmcgdGhlIGZ1bmN0aW9uIHR5cGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLHFEQUFxRDtBQUNyRCxtRkFBbUY7QUFDbkY7Ozs7NkVBSTZFO0FBQzdFLElBQUksU0FBUyxHQUFxQyxVQUNoRCxDQUFTLEVBQ1QsQ0FBUztJQUVULE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNmLENBQUMsQ0FBQztBQUVGLElBQUksY0FBYyxHQUFxQyxVQUNyRCxDQUFTLEVBQ1QsQ0FBUztJQUVULE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNmLENBQUMsQ0FBQyJ9

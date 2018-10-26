@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -27,4 +28,4 @@ var DogIndex = /** @class */ (function (_super) {
     }
     return DogIndex;
 }(AnimalIndex));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5kZXhhYmxlIFR5cGVzLjEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbmRleGFibGUgVHlwZXMuMS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUE7Ozs7Ozs2RUFNNkU7QUFDN0U7SUFBQTtJQUVBLENBQUM7SUFBRCxrQkFBQztBQUFELENBQUMsQUFGRCxJQUVDO0FBQ0Q7SUFBdUIsNEJBQVc7SUFBbEM7O0lBRUEsQ0FBQztJQUFELGVBQUM7QUFBRCxDQUFDLEFBRkQsQ0FBdUIsV0FBVyxHQUVqQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5kZXhhYmxlIFR5cGVzLjEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbmRleGFibGUgVHlwZXMuMS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOzs7Ozs7NkVBTTZFO0FBQzdFO0lBQUE7SUFFQSxDQUFDO0lBQUQsa0JBQUM7QUFBRCxDQUFDLEFBRkQsSUFFQztBQUNEO0lBQXVCLDRCQUFXO0lBQWxDOztJQUVBLENBQUM7SUFBRCxlQUFDO0FBQUQsQ0FBQyxBQUZELENBQXVCLFdBQVcsR0FFakMifQ==

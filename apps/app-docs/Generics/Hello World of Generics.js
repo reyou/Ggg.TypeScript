@@ -1,3 +1,4 @@
+"use strict";
 /*To start off, let’s do the “hello world” of generics:
 the identity function. The identity function is a function
 that will return back whatever is passed in. You can think of
@@ -15,4 +16,4 @@ function HelloWorldGenerics2() {
         return arg;
     }
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGVsbG8gV29ybGQgb2YgR2VuZXJpY3MuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJIZWxsbyBXb3JsZCBvZiBHZW5lcmljcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7bUJBS21CO0FBQ25CO0lBQ0Usa0JBQWtCLEdBQVc7UUFDM0IsT0FBTyxHQUFHLENBQUM7SUFDYixDQUFDO0FBQ0gsQ0FBQztBQUNELGtFQUFrRTtBQUNsRTtJQUNFLGtCQUFrQixHQUFRO1FBQ3hCLE9BQU8sR0FBRyxDQUFDO0lBQ2IsQ0FBQztBQUNILENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGVsbG8gV29ybGQgb2YgR2VuZXJpY3MuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJIZWxsbyBXb3JsZCBvZiBHZW5lcmljcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7O21CQUttQjtBQUNuQjtJQUNFLGtCQUFrQixHQUFXO1FBQzNCLE9BQU8sR0FBRyxDQUFDO0lBQ2IsQ0FBQztBQUNILENBQUM7QUFDRCxrRUFBa0U7QUFDbEU7SUFDRSxrQkFBa0IsR0FBUTtRQUN4QixPQUFPLEdBQUcsQ0FBQztJQUNiLENBQUM7QUFDSCxDQUFDIn0=
