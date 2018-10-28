@@ -5,11 +5,11 @@ on each object.
 Let’s convert a simple class to use get and set. First, 
 let’s start with an example without getters and setters. */
 class EmployeeAccessors {
-    fullName: string;
+  fullName: string | undefined;
 }
 
 let employeeAccessor = new EmployeeAccessors();
 employeeAccessor.fullName = "Bob Smith";
 if (employeeAccessor.fullName) {
-    console.log(employeeAccessor.fullName);
+  console.log(employeeAccessor.fullName);
 }

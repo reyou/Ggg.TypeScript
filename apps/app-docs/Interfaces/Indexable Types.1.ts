@@ -6,10 +6,10 @@ JavaScript will actually convert that to a string before indexing into
 an object. That means that indexing with 100 (a number) is the same 
 thing as indexing with "100" (a string), so the two need to be consistent. */
 class AnimalIndex {
-  name: string;
+  name: string | undefined;
 }
 class DogIndex extends AnimalIndex {
-  breed: string;
+  breed: string | undefined;
 }
 
 // Error: indexing with a numeric string might get you a completely separate type of Animal!

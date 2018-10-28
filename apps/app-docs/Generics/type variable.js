@@ -12,13 +12,13 @@ function TypeVariables() {
     function identity(arg) {
         return arg;
     }
-    var output = identity("myString"); // type of output will be 'string'
+    let output = identity("myString"); // type of output will be 'string'
     console.log(output);
     // The second way is also perhaps the most common.
     // Here we use type argument inference – that is, we want the compiler
     // to set the value of T for us automatically based on the type of
     // the argument we pass in:
-    var output2 = identity("myString"); // type of output will be 'string'
+    let output2 = identity("myString"); // type of output will be 'string'
     console.log(output2);
 }
 TypeVariables();
@@ -28,4 +28,4 @@ so that we can use that information later. Here, we use T again as
 the return type. On inspection, we can now see the same type is used
 for the argument and the return type. This allows us to traffic that
 type information in one side of the function and out the other. */
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZSB2YXJpYWJsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInR5cGUgdmFyaWFibGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7Ozs7Ozs0QkFRNEI7QUFDNUI7SUFDRSxrQkFBcUIsR0FBTTtRQUN6QixPQUFPLEdBQUcsQ0FBQztJQUNiLENBQUM7SUFDRCxJQUFJLE1BQU0sR0FBRyxRQUFRLENBQVMsVUFBVSxDQUFDLENBQUMsQ0FBQyxrQ0FBa0M7SUFDN0UsT0FBTyxDQUFDLEdBQUcsQ0FBQyxNQUFNLENBQUMsQ0FBQztJQUNwQixrREFBa0Q7SUFDbEQsc0VBQXNFO0lBQ3RFLGtFQUFrRTtJQUNsRSwyQkFBMkI7SUFDM0IsSUFBSSxPQUFPLEdBQUcsUUFBUSxDQUFDLFVBQVUsQ0FBQyxDQUFDLENBQUMsa0NBQWtDO0lBQ3RFLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7QUFDdkIsQ0FBQztBQUNELGFBQWEsRUFBRSxDQUFDO0FBQ2hCOzs7OztrRUFLa0UifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZSB2YXJpYWJsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInR5cGUgdmFyaWFibGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7Ozs7Ozs0QkFRNEI7QUFDNUIsU0FBUyxhQUFhO0lBQ3BCLFNBQVMsUUFBUSxDQUFJLEdBQU07UUFDekIsT0FBTyxHQUFHLENBQUM7SUFDYixDQUFDO0lBQ0QsSUFBSSxNQUFNLEdBQUcsUUFBUSxDQUFTLFVBQVUsQ0FBQyxDQUFDLENBQUMsa0NBQWtDO0lBQzdFLE9BQU8sQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUM7SUFDcEIsa0RBQWtEO0lBQ2xELHNFQUFzRTtJQUN0RSxrRUFBa0U7SUFDbEUsMkJBQTJCO0lBQzNCLElBQUksT0FBTyxHQUFHLFFBQVEsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLGtDQUFrQztJQUN0RSxPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO0FBQ3ZCLENBQUM7QUFDRCxhQUFhLEVBQUUsQ0FBQztBQUNoQjs7Ozs7a0VBS2tFIn0=

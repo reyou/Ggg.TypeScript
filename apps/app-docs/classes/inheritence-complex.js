@@ -1,50 +1,26 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var AnimalComplex = /** @class */ (function () {
-    function AnimalComplex(theName) {
-        this.name = theName;
+class AnimalComplex {
+    constructor(theName) { this.name = theName; }
+    move(distanceInMeters = 0) {
+        console.log(`${this.name} moved ${distanceInMeters}m.`);
     }
-    AnimalComplex.prototype.move = function (distanceInMeters) {
-        if (distanceInMeters === void 0) { distanceInMeters = 0; }
-        console.log(this.name + " moved " + distanceInMeters + "m.");
-    };
-    return AnimalComplex;
-}());
-var Snake = /** @class */ (function (_super) {
-    __extends(Snake, _super);
-    function Snake(name) {
-        return _super.call(this, name) || this;
-    }
-    Snake.prototype.move = function (distanceInMeters) {
-        if (distanceInMeters === void 0) { distanceInMeters = 5; }
+}
+class Snake extends AnimalComplex {
+    constructor(name) { super(name); }
+    move(distanceInMeters = 5) {
         console.log("Slithering...");
-        _super.prototype.move.call(this, distanceInMeters);
-    };
-    return Snake;
-}(AnimalComplex));
-var Horse = /** @class */ (function (_super) {
-    __extends(Horse, _super);
-    function Horse(name) {
-        return _super.call(this, name) || this;
+        super.move(distanceInMeters);
     }
-    Horse.prototype.move = function (distanceInMeters) {
-        if (distanceInMeters === void 0) { distanceInMeters = 45; }
+}
+class Horse extends AnimalComplex {
+    constructor(name) { super(name); }
+    move(distanceInMeters = 45) {
         console.log("Galloping...");
-        _super.prototype.move.call(this, distanceInMeters);
-    };
-    return Horse;
-}(AnimalComplex));
-var sam = new Snake("Sammy the Python");
-var tom = new Horse("Tommy the Palomino");
+        super.move(distanceInMeters);
+    }
+}
+let sam = new Snake("Sammy the Python");
+let tom = new Horse("Tommy the Palomino");
 sam.move();
 tom.move(34);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5oZXJpdGVuY2UtY29tcGxleC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImluaGVyaXRlbmNlLWNvbXBsZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQTtJQUVJLHVCQUFZLE9BQWU7UUFBSSxJQUFJLENBQUMsSUFBSSxHQUFHLE9BQU8sQ0FBQztJQUFDLENBQUM7SUFDckQsNEJBQUksR0FBSixVQUFLLGdCQUE0QjtRQUE1QixpQ0FBQSxFQUFBLG9CQUE0QjtRQUM3QixPQUFPLENBQUMsR0FBRyxDQUFJLElBQUksQ0FBQyxJQUFJLGVBQVUsZ0JBQWdCLE9BQUksQ0FBQyxDQUFDO0lBQzVELENBQUM7SUFDTCxvQkFBQztBQUFELENBQUMsQUFORCxJQU1DO0FBRUQ7SUFBb0IseUJBQWE7SUFDN0IsZUFBWSxJQUFZO2VBQUksa0JBQU0sSUFBSSxDQUFDO0lBQUUsQ0FBQztJQUMxQyxvQkFBSSxHQUFKLFVBQUssZ0JBQW9CO1FBQXBCLGlDQUFBLEVBQUEsb0JBQW9CO1FBQ3JCLE9BQU8sQ0FBQyxHQUFHLENBQUMsZUFBZSxDQUFDLENBQUM7UUFDN0IsaUJBQU0sSUFBSSxZQUFDLGdCQUFnQixDQUFDLENBQUM7SUFDakMsQ0FBQztJQUNMLFlBQUM7QUFBRCxDQUFDLEFBTkQsQ0FBb0IsYUFBYSxHQU1oQztBQUVEO0lBQW9CLHlCQUFhO0lBQzdCLGVBQVksSUFBWTtlQUFJLGtCQUFNLElBQUksQ0FBQztJQUFFLENBQUM7SUFDMUMsb0JBQUksR0FBSixVQUFLLGdCQUFxQjtRQUFyQixpQ0FBQSxFQUFBLHFCQUFxQjtRQUN0QixPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBQyxDQUFDO1FBQzVCLGlCQUFNLElBQUksWUFBQyxnQkFBZ0IsQ0FBQyxDQUFDO0lBQ2pDLENBQUM7SUFDTCxZQUFDO0FBQUQsQ0FBQyxBQU5ELENBQW9CLGFBQWEsR0FNaEM7QUFFRCxJQUFJLEdBQUcsR0FBRyxJQUFJLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDO0FBQ3hDLElBQUksR0FBRyxHQUFrQixJQUFJLEtBQUssQ0FBQyxvQkFBb0IsQ0FBQyxDQUFDO0FBRXpELEdBQUcsQ0FBQyxJQUFJLEVBQUUsQ0FBQztBQUNYLEdBQUcsQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5oZXJpdGVuY2UtY29tcGxleC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImluaGVyaXRlbmNlLWNvbXBsZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE1BQU0sYUFBYTtJQUVmLFlBQVksT0FBZSxJQUFJLElBQUksQ0FBQyxJQUFJLEdBQUcsT0FBTyxDQUFDLENBQUMsQ0FBQztJQUNyRCxJQUFJLENBQUMsbUJBQTJCLENBQUM7UUFDN0IsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLElBQUksQ0FBQyxJQUFJLFVBQVUsZ0JBQWdCLElBQUksQ0FBQyxDQUFDO0lBQzVELENBQUM7Q0FDSjtBQUVELE1BQU0sS0FBTSxTQUFRLGFBQWE7SUFDN0IsWUFBWSxJQUFZLElBQUksS0FBSyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQztJQUMxQyxJQUFJLENBQUMsZ0JBQWdCLEdBQUcsQ0FBQztRQUNyQixPQUFPLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBQyxDQUFDO1FBQzdCLEtBQUssQ0FBQyxJQUFJLENBQUMsZ0JBQWdCLENBQUMsQ0FBQztJQUNqQyxDQUFDO0NBQ0o7QUFFRCxNQUFNLEtBQU0sU0FBUSxhQUFhO0lBQzdCLFlBQVksSUFBWSxJQUFJLEtBQUssQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLENBQUM7SUFDMUMsSUFBSSxDQUFDLGdCQUFnQixHQUFHLEVBQUU7UUFDdEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLENBQUMsQ0FBQztRQUM1QixLQUFLLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDLENBQUM7SUFDakMsQ0FBQztDQUNKO0FBRUQsSUFBSSxHQUFHLEdBQUcsSUFBSSxLQUFLLENBQUMsa0JBQWtCLENBQUMsQ0FBQztBQUN4QyxJQUFJLEdBQUcsR0FBa0IsSUFBSSxLQUFLLENBQUMsb0JBQW9CLENBQUMsQ0FBQztBQUV6RCxHQUFHLENBQUMsSUFBSSxFQUFFLENBQUM7QUFDWCxHQUFHLENBQUMsSUFBSSxDQUFDLEVBQUUsQ0FBQyxDQUFDIn0=

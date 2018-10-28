@@ -3,7 +3,7 @@ that are implemented in the class, as we do with
 setTime in the below example: */
 interface ClockInterface2 {
   currentTime: Date;
-  setTime(d: Date);
+  setTime(d: Date): any;
 }
 
 class Clock2 implements ClockInterface2 {

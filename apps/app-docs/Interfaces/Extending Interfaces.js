@@ -1,5 +1,5 @@
 "use strict";
-var square2 = {};
+let square2 = {};
 square2.color = "blue";
 square2.sideLength = 10;
 console.log(square2);

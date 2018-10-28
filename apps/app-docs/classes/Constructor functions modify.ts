@@ -13,7 +13,7 @@ on greeterMaker, creating new instances of Greeter and invoking
 them as before. */
 class GreeterModify {
   static standardGreeting = "Hello, there";
-  greeting: string;
+  greeting: string | undefined;
   greet() {
     if (this.greeting) {
       return "Hello, " + this.greeting;

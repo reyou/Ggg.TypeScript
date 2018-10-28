@@ -1,10 +1,10 @@
 function StructuralTyping() {
   interface Named {
-    name: string;
+    name: string | undefined;
   }
 
   class Person {
-    name: string;
+    name: string | undefined;
   }
 
   let p: Named;

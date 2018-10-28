@@ -23,11 +23,11 @@ function UsingClassTypesAdvanced() {
   }
 
   class Bee extends Animal {
-    keeper: BeeKeeper | undefined;
+    keeper: BeeKeeper = new BeeKeeper();
   }
 
   class Lion extends Animal {
-    keeper: ZooKeeper | undefined;
+    keeper: ZooKeeper = new ZooKeeper();
   }
   function createInstance<A extends Animal>(c: new () => A): A {
     return new c();

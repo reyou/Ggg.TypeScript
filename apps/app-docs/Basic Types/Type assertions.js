@@ -8,15 +8,15 @@ special checking or restructuring of data. It has no runtime impact, and
 is used purely by the compiler. TypeScript assumes that you, the programmer,
 have performed any special checks that you need.
 Type assertions have two forms. One is the “angle-bracket” syntax: */
-var someValue = "this is a string";
-var strLength = someValue.length;
-var strLength2 = someValue.length;
+let someValue = "this is a string";
+let strLength = someValue.length;
+let strLength2 = someValue.length;
 console.log(someValue);
 console.log(strLength);
 console.log(strLength2);
 // And the other is the as-syntax:
-var someValue2 = "this is a string";
-var strLength3 = someValue.length;
+let someValue2 = "this is a string";
+let strLength3 = someValue.length;
 console.log(strLength3);
 /*The two samples are equivalent. Using one over the other is
 mostly a choice of preference; however, when using TypeScript with JSX,

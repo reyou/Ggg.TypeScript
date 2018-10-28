@@ -4,7 +4,7 @@ part of the type of a member. For example, */
 function CompatibleTypes1() {
   interface Empty<T> {}
   let x: Empty<number>;
-  let y: Empty<string>;
+  let y: Empty<string> = [];
 
   x = y; // okay, y matches structure of x
 }

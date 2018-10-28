@@ -1,12 +1,12 @@
 function AllTypesInUnion() {
   interface Bird {
-    fly();
-    layEggs();
+    fly(): any;
+    layEggs(): any;
   }
 
   interface Fish {
-    swim();
-    layEggs();
+    swim(): any;
+    layEggs(): any;
   }
   class Bronzini implements Fish {
     swim() {

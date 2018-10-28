@@ -1,8 +1,8 @@
 "use strict";
-var myArray;
+let myArray;
 myArray = ["Bob", "Fred"];
 console.log(myArray);
-var myStr = myArray[0];
+let myStr = myArray[0];
 console.log(myStr);
 /*Above, we have a StringArray interface that has an index signature.
 This index signature states that when a StringArray is

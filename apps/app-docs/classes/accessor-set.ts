@@ -6,24 +6,23 @@ the previous example to continue to work seamlessly. */
 let passcode = "secret passcode";
 
 class EmployeeAccessorSet {
-    private _fullName: string;
+  private _fullName: string | undefined;
 
-    get fullName(): string {
-        return this._fullName;
-    }
+  get fullName(this: any): string {
+    return this._fullName;
+  }
 
-    set fullName(newName: string) {
-        if (passcode && passcode == "secret passcode") {
-            this._fullName = newName;
-        }
-        else {
-            console.log("Error: Unauthorized update of employee!");
-        }
+  set fullName(newName: string) {
+    if (passcode && passcode == "secret passcode") {
+      this._fullName = newName;
+    } else {
+      console.log("Error: Unauthorized update of employee!");
     }
+  }
 }
 
 let employeeAccessorSet = new EmployeeAccessorSet();
 employeeAccessorSet.fullName = "Bob Smith";
 if (employeeAccessorSet.fullName) {
-    console.log(employeeAccessorSet.fullName);
+  console.log(employeeAccessorSet.fullName);
 }

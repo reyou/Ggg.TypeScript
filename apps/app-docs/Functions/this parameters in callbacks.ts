@@ -6,13 +6,13 @@ to prevent errors with callbacks too. First, the library author needs to annotat
 the callback type with this: */
 function ThisParametersInCallbacks() {
   class Event {
-    message: string;
+    message: string | undefined;
   }
   interface UIElement {
     addClickListener(onclick: (this: void, e: Event) => void): void;
   }
   class Handler {
-    info: string;
+    info: string | undefined;
     onClickBad(this: Handler, e: Event) {
       // oops, used this here. using this callback would crash at runtime
       this.info = e.message;
@@ -30,13 +30,13 @@ function that does not require a this type. Second, annotate your
 calling code with this: */
 function ThisParametersInCallbacksFixed() {
   class Event {
-    message: string;
+    message: string | undefined;
   }
   interface UIElement {
     addClickListener(onclick: (this: void, e: Event) => void): void;
   }
   class Handler {
-    info: string;
+    info: string | undefined;
     onClickGood(this: void, e: Event) {
       // can't use this here because it's of type void!
       console.log("clicked!");
@@ -50,13 +50,13 @@ to pass to addClickListener. Of course, this also means that it can’t use
 this.info. If you want both then you’ll have to use an arrow function: */
 function ThisParametersInCallbacksFixed2() {
   class Event {
-    message: string;
+    message: string | undefined;
   }
   interface UIElement {
     addClickListener(onclick: (this: void, e: Event) => void): void;
   }
   class Handler {
-    info: string;
+    info: string | undefined;
     onClickGood = (e: Event) => {
       this.info = e.message;
     };

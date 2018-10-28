@@ -6,21 +6,15 @@ function, this will be undefined. With some work you can use this parameters
 to prevent errors with callbacks too. First, the library author needs to annotate
 the callback type with this: */
 function ThisParametersInCallbacks() {
-    var Event = /** @class */ (function () {
-        function Event() {
-        }
-        return Event;
-    }());
-    var Handler = /** @class */ (function () {
-        function Handler() {
-        }
-        Handler.prototype.onClickBad = function (e) {
+    class Event {
+    }
+    class Handler {
+        onClickBad(e) {
             // oops, used this here. using this callback would crash at runtime
             this.info = e.message;
-        };
-        return Handler;
-    }());
-    var h = new Handler();
+        }
+    }
+    let h = new Handler();
     // uiElement.addClickListener(h.onClickBad); // error!
 }
 /*With this annotated, you make it explicit that onClickBad must be
@@ -31,42 +25,31 @@ change the type of this: */
 function that does not require a this type. Second, annotate your
 calling code with this: */
 function ThisParametersInCallbacksFixed() {
-    var Event = /** @class */ (function () {
-        function Event() {
-        }
-        return Event;
-    }());
-    var Handler = /** @class */ (function () {
-        function Handler() {
-        }
-        Handler.prototype.onClickGood = function (e) {
+    class Event {
+    }
+    class Handler {
+        onClickGood(e) {
             // can't use this here because it's of type void!
             console.log("clicked!");
-        };
-        return Handler;
-    }());
-    var h = new Handler();
+        }
+    }
+    let h = new Handler();
     // uiElement.addClickListener(h.onClickGood);
 }
 /*Because onClickGood specifies its this type as void, it is legal
 to pass to addClickListener. Of course, this also means that it can’t use
 this.info. If you want both then you’ll have to use an arrow function: */
 function ThisParametersInCallbacksFixed2() {
-    var Event = /** @class */ (function () {
-        function Event() {
-        }
-        return Event;
-    }());
-    var Handler = /** @class */ (function () {
-        function Handler() {
-            var _this = this;
-            this.onClickGood = function (e) {
-                _this.info = e.message;
+    class Event {
+    }
+    class Handler {
+        constructor() {
+            this.onClickGood = (e) => {
+                this.info = e.message;
             };
         }
-        return Handler;
-    }());
-    var h = new Handler();
+    }
+    let h = new Handler();
     // uiElement.addClickListener(h.onClickGood);
 }
 /*This works because arrow functions don’t capture this, so you
@@ -74,4 +57,4 @@ can always pass them to something that expects this: void. The downside is
 that one arrow function is created per object of type Handler. Methods,
 on the other hand, are only created once and attached to Handler’s prototype.
 They are shared between all objects of type Handler. */
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGhpcyBwYXJhbWV0ZXJzIGluIGNhbGxiYWNrcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInRoaXMgcGFyYW1ldGVycyBpbiBjYWxsYmFja3MudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7OzsrQkFLK0I7QUFDL0I7SUFDRTtRQUFBO1FBRUEsQ0FBQztRQUFELFlBQUM7SUFBRCxDQUFDLEFBRkQsSUFFQztJQUlEO1FBQUE7UUFNQSxDQUFDO1FBSkMsNEJBQVUsR0FBVixVQUEwQixDQUFRO1lBQ2hDLG1FQUFtRTtZQUNuRSxJQUFJLENBQUMsSUFBSSxHQUFHLENBQUMsQ0FBQyxPQUFPLENBQUM7UUFDeEIsQ0FBQztRQUNILGNBQUM7SUFBRCxDQUFDLEFBTkQsSUFNQztJQUNELElBQUksQ0FBQyxHQUFHLElBQUksT0FBTyxFQUFFLENBQUM7SUFDdEIsc0RBQXNEO0FBQ3hELENBQUM7QUFDRDs7OzJCQUcyQjtBQUMzQjs7MEJBRTBCO0FBQzFCO0lBQ0U7UUFBQTtRQUVBLENBQUM7UUFBRCxZQUFDO0lBQUQsQ0FBQyxBQUZELElBRUM7SUFJRDtRQUFBO1FBTUEsQ0FBQztRQUpDLDZCQUFXLEdBQVgsVUFBd0IsQ0FBUTtZQUM5QixpREFBaUQ7WUFDakQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsQ0FBQztRQUMxQixDQUFDO1FBQ0gsY0FBQztJQUFELENBQUMsQUFORCxJQU1DO0lBQ0QsSUFBSSxDQUFDLEdBQUcsSUFBSSxPQUFPLEVBQUUsQ0FBQztJQUN0Qiw2Q0FBNkM7QUFDL0MsQ0FBQztBQUNEOzt5RUFFeUU7QUFDekU7SUFDRTtRQUFBO1FBRUEsQ0FBQztRQUFELFlBQUM7SUFBRCxDQUFDLEFBRkQsSUFFQztJQUlEO1FBQUE7WUFBQSxpQkFLQztZQUhDLGdCQUFXLEdBQUcsVUFBQyxDQUFRO2dCQUNyQixLQUFJLENBQUMsSUFBSSxHQUFHLENBQUMsQ0FBQyxPQUFPLENBQUM7WUFDeEIsQ0FBQyxDQUFDO1FBQ0osQ0FBQztRQUFELGNBQUM7SUFBRCxDQUFDLEFBTEQsSUFLQztJQUNELElBQUksQ0FBQyxHQUFHLElBQUksT0FBTyxFQUFFLENBQUM7SUFDdEIsNkNBQTZDO0FBQy9DLENBQUM7QUFDRDs7Ozt1REFJdUQifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGhpcyBwYXJhbWV0ZXJzIGluIGNhbGxiYWNrcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInRoaXMgcGFyYW1ldGVycyBpbiBjYWxsYmFja3MudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7OzsrQkFLK0I7QUFDL0IsU0FBUyx5QkFBeUI7SUFDaEMsTUFBTSxLQUFLO0tBRVY7SUFJRCxNQUFNLE9BQU87UUFFWCxVQUFVLENBQWdCLENBQVE7WUFDaEMsbUVBQW1FO1lBQ25FLElBQUksQ0FBQyxJQUFJLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQztRQUN4QixDQUFDO0tBQ0Y7SUFDRCxJQUFJLENBQUMsR0FBRyxJQUFJLE9BQU8sRUFBRSxDQUFDO0lBQ3RCLHNEQUFzRDtBQUN4RCxDQUFDO0FBQ0Q7OzsyQkFHMkI7QUFDM0I7OzBCQUUwQjtBQUMxQixTQUFTLDhCQUE4QjtJQUNyQyxNQUFNLEtBQUs7S0FFVjtJQUlELE1BQU0sT0FBTztRQUVYLFdBQVcsQ0FBYSxDQUFRO1lBQzlCLGlEQUFpRDtZQUNqRCxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1FBQzFCLENBQUM7S0FDRjtJQUNELElBQUksQ0FBQyxHQUFHLElBQUksT0FBTyxFQUFFLENBQUM7SUFDdEIsNkNBQTZDO0FBQy9DLENBQUM7QUFDRDs7eUVBRXlFO0FBQ3pFLFNBQVMsK0JBQStCO0lBQ3RDLE1BQU0sS0FBSztLQUVWO0lBSUQsTUFBTSxPQUFPO1FBQWI7WUFFRSxnQkFBVyxHQUFHLENBQUMsQ0FBUSxFQUFFLEVBQUU7Z0JBQ3pCLElBQUksQ0FBQyxJQUFJLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQztZQUN4QixDQUFDLENBQUM7UUFDSixDQUFDO0tBQUE7SUFDRCxJQUFJLENBQUMsR0FBRyxJQUFJLE9BQU8sRUFBRSxDQUFDO0lBQ3RCLDZDQUE2QztBQUMvQyxDQUFDO0FBQ0Q7Ozs7dURBSXVEIn0=

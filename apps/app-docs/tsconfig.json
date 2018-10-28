@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6",
     "module": "commonjs",
     "outDir": "./",
     "lib": ["es2015", "dom"],
@@ -10,7 +10,7 @@
       "node_modules/@types"
     ],
     "rootDir": "./",
-    "watch": true,
+    "watch": false,
     "downlevelIteration": true,
     "inlineSourceMap": true,
     "strict": true

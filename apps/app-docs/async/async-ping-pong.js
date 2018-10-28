@@ -7,86 +7,31 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var GggExamplesPromise = /** @class */ (function () {
-    function GggExamplesPromise() {
+class GggExamplesPromise {
+    static ExecutePromise() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield GggExamplesPromise.Ping();
+            console.log("main is done.");
+        });
     }
-    GggExamplesPromise.ExecutePromise = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, GggExamplesPromise.Ping()];
-                    case 1:
-                        _a.sent();
-                        console.log("main is done.");
-                        return [2 /*return*/];
-                }
-            });
+    static Ping() {
+        return __awaiter(this, void 0, void 0, function* () {
+            for (var i = 0; i <= 3; i++) {
+                yield GggExamplesPromise.Delay(300);
+                console.log(i + " ping.");
+            }
         });
-    };
-    GggExamplesPromise.Ping = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var i;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        i = 0;
-                        _a.label = 1;
-                    case 1:
-                        if (!(i <= 3)) return [3 /*break*/, 4];
-                        return [4 /*yield*/, GggExamplesPromise.Delay(300)];
-                    case 2:
-                        _a.sent();
-                        console.log(i + " ping.");
-                        _a.label = 3;
-                    case 3:
-                        i++;
-                        return [3 /*break*/, 1];
-                    case 4: return [2 /*return*/];
-                }
-            });
+    }
+    static Delay(ms) {
+        return __awaiter(this, void 0, void 0, function* () {
+            var promise = new Promise(resolve => setTimeout(resolve, ms));
+            return promise;
         });
-    };
-    GggExamplesPromise.Delay = function (ms) {
-        return __awaiter(this, void 0, void 0, function () {
-            var promise;
-            return __generator(this, function (_a) {
-                promise = new Promise(function (resolve) { return setTimeout(resolve, ms); });
-                return [2 /*return*/, promise];
-            });
-        });
-    };
-    return GggExamplesPromise;
-}());
+    }
+}
 exports.GggExamplesPromise = GggExamplesPromise;
 /*GggTest*/
 GggExamplesPromise.ExecutePromise();
 console.log("test is done.");
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXN5bmMtcGluZy1wb25nLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXN5bmMtcGluZy1wb25nLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFQTtJQUFBO0lBZUEsQ0FBQztJQWRxQixpQ0FBYyxHQUFsQzs7Ozs0QkFDRSxxQkFBTSxrQkFBa0IsQ0FBQyxJQUFJLEVBQUUsRUFBQTs7d0JBQS9CLFNBQStCLENBQUM7d0JBQ2hDLE9BQU8sQ0FBQyxHQUFHLENBQUMsZUFBZSxDQUFDLENBQUM7Ozs7O0tBQzlCO0lBQ21CLHVCQUFJLEdBQXhCOzs7Ozs7d0JBQ1csQ0FBQyxHQUFHLENBQUM7Ozs2QkFBRSxDQUFBLENBQUMsSUFBSSxDQUFDLENBQUE7d0JBQ3BCLHFCQUFNLGtCQUFrQixDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsRUFBQTs7d0JBQW5DLFNBQW1DLENBQUM7d0JBQ3BDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQyxHQUFHLFFBQVEsQ0FBQyxDQUFDOzs7d0JBRkosQ0FBQyxFQUFFLENBQUE7Ozs7OztLQUk1QjtJQUNtQix3QkFBSyxHQUF6QixVQUEwQixFQUFVOzs7O2dCQUM5QixPQUFPLEdBQUcsSUFBSSxPQUFPLENBQUMsVUFBQSxPQUFPLElBQUksT0FBQSxVQUFVLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxFQUF2QixDQUF1QixDQUFDLENBQUM7Z0JBQzlELHNCQUFPLE9BQU8sRUFBQzs7O0tBQ2hCO0lBQ0gseUJBQUM7QUFBRCxDQUFDLEFBZkQsSUFlQztBQWZZLGdEQUFrQjtBQWdCL0IsV0FBVztBQUNYLGtCQUFrQixDQUFDLGNBQWMsRUFBRSxDQUFDO0FBQ3BDLE9BQU8sQ0FBQyxHQUFHLENBQUMsZUFBZSxDQUFDLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXN5bmMtcGluZy1wb25nLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXN5bmMtcGluZy1wb25nLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFFQSxNQUFhLGtCQUFrQjtJQUN0QixNQUFNLENBQU8sY0FBYzs7WUFDaEMsTUFBTSxrQkFBa0IsQ0FBQyxJQUFJLEVBQUUsQ0FBQztZQUNoQyxPQUFPLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBQyxDQUFDO1FBQy9CLENBQUM7S0FBQTtJQUNNLE1BQU0sQ0FBTyxJQUFJOztZQUN0QixLQUFLLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLElBQUksQ0FBQyxFQUFFLENBQUMsRUFBRSxFQUFFO2dCQUMzQixNQUFNLGtCQUFrQixDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFDcEMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDLEdBQUcsUUFBUSxDQUFDLENBQUM7YUFDM0I7UUFDSCxDQUFDO0tBQUE7SUFDTSxNQUFNLENBQU8sS0FBSyxDQUFDLEVBQVU7O1lBQ2xDLElBQUksT0FBTyxHQUFHLElBQUksT0FBTyxDQUFDLE9BQU8sQ0FBQyxFQUFFLENBQUMsVUFBVSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsQ0FBQyxDQUFDO1lBQzlELE9BQU8sT0FBTyxDQUFDO1FBQ2pCLENBQUM7S0FBQTtDQUNGO0FBZkQsZ0RBZUM7QUFDRCxXQUFXO0FBQ1gsa0JBQWtCLENBQUMsY0FBYyxFQUFFLENBQUM7QUFDcEMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxlQUFlLENBQUMsQ0FBQyJ9

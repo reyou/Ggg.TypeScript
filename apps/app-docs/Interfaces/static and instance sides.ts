@@ -7,7 +7,7 @@ interface ClockConstructor {
   new (hour: number, minute: number): ClockInterface3;
 }
 interface ClockInterface3 {
-  tick();
+  tick(): any;
 }
 
 class DigitalClock implements ClockInterface3 {

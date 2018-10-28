@@ -1,11 +1,11 @@
 "use strict";
 function StartingOut() {
-    var x;
+    let x;
     // y's inferred type is { name: string; location: string; }
-    var y = {
+    let y = {
         name: "Alice",
         location: "Seattle"
     };
     x = y;
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RhcnRpbmcgb3V0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3RhcnRpbmcgb3V0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtJQUtFLElBQUksQ0FBUSxDQUFDO0lBQ2IsMkRBQTJEO0lBQzNELElBQUksQ0FBQyxHQUFHO1FBQ04sSUFBSSxFQUFFLE9BQU87UUFDYixRQUFRLEVBQUUsU0FBUztLQUNwQixDQUFDO0lBQ0YsQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNSLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RhcnRpbmcgb3V0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3RhcnRpbmcgb3V0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxTQUFTLFdBQVc7SUFLbEIsSUFBSSxDQUFRLENBQUM7SUFDYiwyREFBMkQ7SUFDM0QsSUFBSSxDQUFDLEdBQUc7UUFDTixJQUFJLEVBQUUsT0FBTztRQUNiLFFBQVEsRUFBRSxTQUFTO0tBQ3BCLENBQUM7SUFDRixDQUFDLEdBQUcsQ0FBQyxDQUFDO0FBQ1IsQ0FBQyJ9

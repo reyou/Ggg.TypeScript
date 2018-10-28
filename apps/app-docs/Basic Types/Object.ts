@@ -10,4 +10,4 @@ create(null); // OK
 // create(42); // Error
 // create("string"); // Error
 // create(false); // Error
-create(undefined); // Error
+// create(undefined); // Error

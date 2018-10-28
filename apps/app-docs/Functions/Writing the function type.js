@@ -6,10 +6,10 @@ and the return type. When writing out the whole function type, both
 parts are required. We write out the parameter types just like a
 parameter list, giving each parameter a name and a type.
 This name is just to help with readability. We could have instead written: */
-var myAddType = function (x, y) {
+let myAddType = function (x, y) {
     return x + y;
 };
-var mySubtractType = function (x, y) {
+let mySubtractType = function (x, y) {
     return x - y;
 };
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV3JpdGluZyB0aGUgZnVuY3Rpb24gdHlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIldyaXRpbmcgdGhlIGZ1bmN0aW9uIHR5cGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLHFEQUFxRDtBQUNyRCxtRkFBbUY7QUFDbkY7Ozs7NkVBSTZFO0FBQzdFLElBQUksU0FBUyxHQUFxQyxVQUNoRCxDQUFTLEVBQ1QsQ0FBUztJQUVULE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNmLENBQUMsQ0FBQztBQUVGLElBQUksY0FBYyxHQUFxQyxVQUNyRCxDQUFTLEVBQ1QsQ0FBUztJQUVULE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNmLENBQUMsQ0FBQyJ9

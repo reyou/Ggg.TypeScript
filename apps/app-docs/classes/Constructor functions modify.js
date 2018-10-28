@@ -12,26 +12,23 @@ of the static members of Greeter along with the constructor that
 creates instances of the Greeter class. We show this by using new
 on greeterMaker, creating new instances of Greeter and invoking
 them as before. */
-var GreeterModify = /** @class */ (function () {
-    function GreeterModify() {
-    }
-    GreeterModify.prototype.greet = function () {
+class GreeterModify {
+    greet() {
         if (this.greeting) {
             return "Hello, " + this.greeting;
         }
         else {
             return GreeterModify.standardGreeting;
         }
-    };
-    GreeterModify.standardGreeting = "Hello, there";
-    return GreeterModify;
-}());
-var greeter1;
+    }
+}
+GreeterModify.standardGreeting = "Hello, there";
+let greeter1;
 greeter1 = new GreeterModify();
 console.log(greeter1.greet());
-var greeterMaker = GreeterModify;
+let greeterMaker = GreeterModify;
 console.log(typeof greeterMaker);
 greeterMaker.standardGreeting = "Hey there!";
-var greeter2 = new greeterMaker();
+let greeter2 = new greeterMaker();
 console.log(greeter2.greet());
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29uc3RydWN0b3IgZnVuY3Rpb25zIG1vZGlmeS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNvbnN0cnVjdG9yIGZ1bmN0aW9ucyBtb2RpZnkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7Ozs7Ozs7Ozs7a0JBWWtCO0FBQ2xCO0lBQUE7SUFVQSxDQUFDO0lBUEMsNkJBQUssR0FBTDtRQUNFLElBQUksSUFBSSxDQUFDLFFBQVEsRUFBRTtZQUNqQixPQUFPLFNBQVMsR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO1NBQ2xDO2FBQU07WUFDTCxPQUFPLGFBQWEsQ0FBQyxnQkFBZ0IsQ0FBQztTQUN2QztJQUNILENBQUM7SUFSTSw4QkFBZ0IsR0FBRyxjQUFjLENBQUM7SUFTM0Msb0JBQUM7Q0FBQSxBQVZELElBVUM7QUFFRCxJQUFJLFFBQXVCLENBQUM7QUFDNUIsUUFBUSxHQUFHLElBQUksYUFBYSxFQUFFLENBQUM7QUFDL0IsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLENBQUMsS0FBSyxFQUFFLENBQUMsQ0FBQztBQUU5QixJQUFJLFlBQVksR0FBeUIsYUFBYSxDQUFDO0FBQ3ZELE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxZQUFZLENBQUMsQ0FBQztBQUNqQyxZQUFZLENBQUMsZ0JBQWdCLEdBQUcsWUFBWSxDQUFDO0FBRTdDLElBQUksUUFBUSxHQUFrQixJQUFJLFlBQVksRUFBRSxDQUFDO0FBQ2pELE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLEtBQUssRUFBRSxDQUFDLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29uc3RydWN0b3IgZnVuY3Rpb25zIG1vZGlmeS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNvbnN0cnVjdG9yIGZ1bmN0aW9ucyBtb2RpZnkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7Ozs7Ozs7Ozs7a0JBWWtCO0FBQ2xCLE1BQU0sYUFBYTtJQUdqQixLQUFLO1FBQ0gsSUFBSSxJQUFJLENBQUMsUUFBUSxFQUFFO1lBQ2pCLE9BQU8sU0FBUyxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUM7U0FDbEM7YUFBTTtZQUNMLE9BQU8sYUFBYSxDQUFDLGdCQUFnQixDQUFDO1NBQ3ZDO0lBQ0gsQ0FBQzs7QUFSTSw4QkFBZ0IsR0FBRyxjQUFjLENBQUM7QUFXM0MsSUFBSSxRQUF1QixDQUFDO0FBQzVCLFFBQVEsR0FBRyxJQUFJLGFBQWEsRUFBRSxDQUFDO0FBQy9CLE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLEtBQUssRUFBRSxDQUFDLENBQUM7QUFFOUIsSUFBSSxZQUFZLEdBQXlCLGFBQWEsQ0FBQztBQUN2RCxPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sWUFBWSxDQUFDLENBQUM7QUFDakMsWUFBWSxDQUFDLGdCQUFnQixHQUFHLFlBQVksQ0FBQztBQUU3QyxJQUFJLFFBQVEsR0FBa0IsSUFBSSxZQUFZLEVBQUUsQ0FBQztBQUNqRCxPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsQ0FBQyxLQUFLLEVBQUUsQ0FBQyxDQUFDIn0=

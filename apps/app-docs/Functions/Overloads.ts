@@ -8,7 +8,7 @@ function FunctionOverloads() {
   represents the deck, the function will pick the card. If the user picks 
   the card, we tell them which card they’ve picked. But how do we describe 
   this to the type system? */
-  function pickCard(x): any {
+  function pickCard(x: number | { suit: string; card: number }[]): any {
     // Check to see if we're working with an object/array
     // if so, they gave us the deck and we'll pick the card
     if (typeof x == "object") {

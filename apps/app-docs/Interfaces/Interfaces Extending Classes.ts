@@ -26,7 +26,7 @@ class TextBox extends ControlExtending {
   select() {}
 }
 
-class Location {}
+class Location2 {}
 /*In the above example, SelectableControl contains all of the members of 
 Control, including the private state property. Since state is a private 
 member it is only possible for descendants of Control to implement SelectableControl. 
