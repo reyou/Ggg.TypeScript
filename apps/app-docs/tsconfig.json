@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    "outDir": "./",
+    "outDir": "./gggTypeScriptCompiled",
     "lib": ["es2015", "dom"],
     "types": ["mocha", "node"],
     "typeRoots": [
@@ -10,7 +10,7 @@
       "node_modules/@types"
     ],
     "rootDir": "./",
-    "watch": false,
+    "watch": true,
     "downlevelIteration": true,
     "inlineSourceMap": true,
     "strict": true

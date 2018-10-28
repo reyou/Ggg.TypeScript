@@ -1,8 +1,0 @@
-"use strict";
-function add(x, y) {
-    return x + y;
-}
-let myAdd = function (x, y) {
-    return x + y;
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHlwaW5nIHRoZSBmdW5jdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlR5cGluZyB0aGUgZnVuY3Rpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLFNBQVMsR0FBRyxDQUFDLENBQVMsRUFBRSxDQUFTO0lBQy9CLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNmLENBQUM7QUFFRCxJQUFJLEtBQUssR0FBRyxVQUFTLENBQVMsRUFBRSxDQUFTO0lBQ3ZDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUNmLENBQUMsQ0FBQyJ9

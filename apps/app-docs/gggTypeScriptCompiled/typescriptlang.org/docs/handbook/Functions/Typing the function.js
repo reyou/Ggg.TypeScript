@@ -1,0 +1,8 @@
+"use strict";
+function add(x, y) {
+    return x + y;
+}
+let myAdd = function (x, y) {
+    return x + y;
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHlwaW5nIHRoZSBmdW5jdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3R5cGVzY3JpcHRsYW5nLm9yZy9kb2NzL2hhbmRib29rL0Z1bmN0aW9ucy9UeXBpbmcgdGhlIGZ1bmN0aW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxTQUFTLEdBQUcsQ0FBQyxDQUFTLEVBQUUsQ0FBUztJQUMvQixPQUFPLENBQUMsR0FBRyxDQUFDLENBQUM7QUFDZixDQUFDO0FBRUQsSUFBSSxLQUFLLEdBQUcsVUFBUyxDQUFTLEVBQUUsQ0FBUztJQUN2QyxPQUFPLENBQUMsR0FBRyxDQUFDLENBQUM7QUFDZixDQUFDLENBQUMifQ==

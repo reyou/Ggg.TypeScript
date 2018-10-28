@@ -1,7 +1,0 @@
-"use strict";
-let squareExtend = {};
-squareExtend.color = "blue";
-squareExtend.sideLength = 10;
-squareExtend.penWidth = 5.0;
-console.log(squareExtend);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXh0ZW5kaW5nIEludGVyZmFjZXMuMS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV4dGVuZGluZyBJbnRlcmZhY2VzLjEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQWFBLElBQUksWUFBWSxHQUFpQixFQUFFLENBQUM7QUFDcEMsWUFBWSxDQUFDLEtBQUssR0FBRyxNQUFNLENBQUM7QUFDNUIsWUFBWSxDQUFDLFVBQVUsR0FBRyxFQUFFLENBQUM7QUFDN0IsWUFBWSxDQUFDLFFBQVEsR0FBRyxHQUFHLENBQUM7QUFDNUIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUMsQ0FBQyJ9

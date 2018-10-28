@@ -1,0 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const validator = require("./ZipCodeValidator");
+let myValidator = new validator.ZipCodeValidator();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW1wb3J0IHRoZSBlbnRpcmUgbW9kdWxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vdHlwZXNjcmlwdGxhbmcub3JnL2RvY3MvaGFuZGJvb2svTW9kdWxlcy9JbXBvcnQgdGhlIGVudGlyZSBtb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxnREFBZ0Q7QUFDaEQsSUFBSSxXQUFXLEdBQUcsSUFBSSxTQUFTLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQyJ9
