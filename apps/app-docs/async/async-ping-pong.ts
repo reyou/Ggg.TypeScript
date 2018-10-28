@@ -1,5 +1,10 @@
-declare var console: { log: { (arg0: string): void; (arg0: string): void; (arg0: string): void; }; };
-declare var setTimeout: (arg0: (value?: {} | PromiseLike<{}> | undefined) => void, arg1: number) => void;
+declare var console: {
+  log: { (arg0: string): void; (arg0: string): void; (arg0: string): void };
+};
+declare var setTimeout: (
+  arg0: (value?: {} | PromiseLike<{}> | undefined) => void,
+  arg1: number
+) => void;
 export class GggExamplesPromise {
   public static async ExecutePromise() {
     await GggExamplesPromise.Ping();

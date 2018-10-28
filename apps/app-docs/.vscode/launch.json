@@ -11,6 +11,7 @@
       "protocol": "inspector",
       "args": ["${relativeFile}"],
       "cwd": "${workspaceRoot}",
+      "smartStep": true,
       "runtimeArgs": ["-r", "ts-node/register"],
       "internalConsoleOptions": "openOnSessionStart"
     },
@@ -19,6 +20,7 @@
       "request": "launch",
       "name": "Mocha Test (TypeScript)",
       "cwd": "${workspaceRoot}",
+      "smartStep": true,
       "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
       "args": [
         "-u",
