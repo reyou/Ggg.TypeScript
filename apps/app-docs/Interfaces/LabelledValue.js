@@ -1,9 +1,0 @@
-function printLabel2(labelledObj) {
-    console.log(labelledObj.label);
-}
-var myObj2 = {
-    size: 10,
-    label: "Size 11 Object"
-};
-printLabel2(myObj2);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTGFiZWxsZWRWYWx1ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxhYmVsbGVkVmFsdWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY0EscUJBQXFCLFdBQTJCO0lBQzlDLE9BQU8sQ0FBQyxHQUFHLENBQUMsV0FBVyxDQUFDLEtBQUssQ0FBQyxDQUFDO0FBQ2pDLENBQUM7QUFFRCxJQUFJLE1BQU0sR0FBRztJQUNYLElBQUksRUFBRSxFQUFFO0lBQ1IsS0FBSyxFQUFFLGdCQUFnQjtDQUN4QixDQUFDO0FBQ0YsV0FBVyxDQUFDLE1BQU0sQ0FBQyxDQUFDIn0=

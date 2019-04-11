@@ -11,21 +11,28 @@
       "protocol": "inspector",
       "args": ["${relativeFile}"],
       "cwd": "${workspaceRoot}",
+      "smartStep": true,
+      "skipFiles": ["<node_internals>/**"],
       "runtimeArgs": ["-r", "ts-node/register"],
       "internalConsoleOptions": "openOnSessionStart"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Run Mocha Tests",
+      "name": "Mocha Test (TypeScript)",
       "cwd": "${workspaceRoot}",
+      "smartStep": true,
+      "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
       "args": [
         "-u",
         "tdd",
-        "--no-timeouts",
+        "-r",
+        "ts-node/register",
+        "--timeout",
+        "999999",
         "--colors",
-        "${file}" //you can specify paths to specific tests here
+        "${file}"
       ],
       "internalConsoleOptions": "openOnSessionStart"
     }
