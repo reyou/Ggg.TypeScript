@@ -1,0 +1,29 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "watch": "tsc --watch",
+    "test": "mocha --timeout 999999 --colors --recursive --require ts-node/register test/**/*.ts"
+  },
+  "dependencies": {
+    "@types/request": "^2.48.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.2",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

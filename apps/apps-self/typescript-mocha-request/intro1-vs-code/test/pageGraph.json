@@ -1,0 +1,62 @@
+{
+  "url": "http://algo.work/interview/a",
+  "children": [
+    {
+      "url": "http://algo.work/interview/b",
+      "children": [
+        {
+          "url": "http://algo.work/interview/d",
+          "children": [],
+          "reward": 4
+        },
+        {
+          "url": "http://algo.work/interview/e",
+          "children": [],
+          "reward": 5
+        }
+      ],
+      "reward": 2
+    },
+    {
+      "url": "http://algo.work/interview/c",
+      "children": [
+        {
+          "url": "http://algo.work/interview/f",
+          "children": [
+            {
+              "url": "http://algo.work/interview/h",
+              "children": [],
+              "reward": -1
+            }
+          ],
+          "reward": 6
+        },
+        {
+          "url": "http://algo.work/interview/g",
+          "children": [
+            {
+              "url": "http://algo.work/interview/i",
+              "children": [
+                {
+                  "url": "http://algo.work/interview/j",
+                  "children": [
+                    {
+                      "url": "http://algo.work/interview/k",
+                      "children": [],
+                      "reward": 0.25
+                    }
+                  ],
+                  "reward": 0
+                }
+              ],
+              "reward": 0
+            }
+          ],
+          "reward": 7
+        }
+      ],
+      "reward": 3
+    }
+  ],
+  "reward": 1
+}
