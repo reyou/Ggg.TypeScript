@@ -1,0 +1,19 @@
+{
+  "name": "browserwindow",
+  "version": "1.0.0",
+  "description": "electron sample app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "app"
+  ],
+  "author": "teoman shipahi",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.2"
+  }
+}
